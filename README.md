@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# MatchMe - аналог тиндера в Telegram Web App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MatchMe - это TG Web App для знакомств с регистрацией по Telegram ID. Сделан по аналогии с Тиндером / VK Знакомства. \
+Внутри приложение есть страница регистрация (заполнение данных и фотографий), просмотр анкет со свайпами, мои лайки, чаты, настройки).
 
-Currently, two official plugins are available:
+## 🌐 Ссылка на проект
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Бот в телеграм](https://t.me/MatchMeDatingbot) — нажмите, чтобы посмотреть проект в действии.
 
-## Expanding the ESLint configuration
+## 🛠 Использованные технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend:** React, TypeScript, CSS Modules
+- **Backend:** Node.js, Express, MongoDB
+- **Библиотеки:** Axios, Mongoose, Socket.io
+- **Другое:** Docker, Nginx
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Как запустить
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Следуйте этим шагам, чтобы запустить проект локально:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Клонируйте репозиторий:
+   
+   ```bash
+   git clone https://github.com/username/project.git
+   ```
+2. Перейдите в папку проекта:
+   
+   ```bash
+   cd project
+   ```
+3. Установите зависимости:
+   
+   ```bash
+   npm install
+   ```
+4. Создайте файл .env в корне проекта и добавьте необходимые переменные окружения:
+   
+   ```plaintext
+   VITE_BASE_URL=your_server_requests_url
+   ```
+5. Запустите проект
+   
+   ```bash
+     npm run dev
+   ```
+*6. Если сервер еще не запущен, то запустите его - https://github.com/nikita-shalamov/tinder-server
